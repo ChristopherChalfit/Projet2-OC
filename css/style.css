@@ -1,8 +1,7 @@
 /******** Global *******/
 * {
     font-family: 'Raleway', sans-serif;
-    padding-top: 0px;
-    margin-top: 0px;
+
 }
 
 :root {
@@ -163,7 +162,6 @@ header {
     border: none;
     height: 93%;
     font-size: 16px;
-    vertical-align: middle;
     padding: 0px;
     margin: auto 0;
     text-align: center;
@@ -388,7 +386,7 @@ header {
 
 /*****Activité *****/
 .activity {
-    margin: 65px 30px 35px 1.875rem;
+    margin: 65px 0 35px 0;
 
 }
 
@@ -397,12 +395,10 @@ header {
 }
 
 .activity .activity-cards {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(50px, max-content));
-    grid-auto-rows: auto;
-    gap: 1.875rem;
-    height: fit-content;
-    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .activity-cards a {
@@ -412,9 +408,9 @@ header {
 
 .activity-cards .card {
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin-right: 1.875rem;
-    padding: 5px;
+    padding: 0px;
 }
 
 .activity-cards img {
@@ -422,10 +418,15 @@ header {
     width: 100%;
     border-radius: 1.25rem 1.25rem 0px 0px;
     object-fit: cover;
+    border-image-width: auto;
 }
-
-.activity-cards .card-title {
-    margin: 1.25rem;
+.activity-cards .card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    justify-content: center;
+  align-items: center;
 }
 
 /******** Section bas de page *******/
@@ -548,7 +549,7 @@ header {
 }
 
 /********* Mobiles ********/
-@media (width <=768px) {
+@media (width <=769px) {
     body {
         margin: 0px;
     }
@@ -644,6 +645,7 @@ header {
     .search-bar button {
         border-radius: 15px 15px 15px 15px;
         padding: 0px;
+        margin-left: -20px;
     }
 
     .filters {
@@ -753,7 +755,7 @@ header {
     }
 
     .populaires {
-        width: fit-content;
+        width: auto;
         padding: 0px 30px;
         padding-bottom: 65px;
         margin: 0px;
@@ -766,6 +768,7 @@ header {
 
     .populaires-cards img {
         height: 146px;
+        object-fit: cover;
     }
 
     .populaires-cards .card-title {
