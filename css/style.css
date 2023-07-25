@@ -230,7 +230,10 @@ header {
 
 .available-accomodation {
     display: flex;
-    gap: 0.625rem;
+    height: 24px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
     margin-bottom: 2.188rem;
 }
 
