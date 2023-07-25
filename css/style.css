@@ -295,6 +295,7 @@ header {
 }
 
 .accomodation-cards .card-title {
+    margin-top: 0px;
     margin-bottom: 0.188rem;
     line-height: 1.25rem;
 }
