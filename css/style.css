@@ -402,7 +402,8 @@ header {
 /*****Activité *****/
 .activite {
     margin: 65px 0 35px 0;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .activite .section-titre {
@@ -439,18 +440,29 @@ header {
     border-image-width: auto;
 }
 
+.activite-cards .card-small {
+    flex-grow: 1;
+    margin-left: 19px;
+    margin-top: 10px;
+    margin-right: 19px;
+}
+
+.activite-cards .card-large {
+    flex-grow: 2;
+    margin-left: 19px;
+    margin-top: 5px;
+    margin-right: 19px;
+
+}
+
 .activite-cards .card-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
     align-items: stretch;
-    margin-left: 19px;
-    margin-right: 19px;
-      
+
 }
-.activite-cards .card-title{
-    margin-top: 5px;
-}
+
 /******** Section bas de page *******/
 .footer-section {
     display: flex;
@@ -565,15 +577,10 @@ header {
 
     .activite-cards .card-title {
         font-size: 16px;
-        margin: 0px;
-        padding: 20px 19px;
-        padding-right: 0;
-        text-align: initial;
     }
 
     .activite-cards img {
         height: 200px;
-
     }
 
 }
@@ -845,7 +852,7 @@ header {
         width: 100%;
         height: 100%;
         max-height: 200px;
-        min-height:200px;
+        min-height: 200px;
     }
 
     .activite-cards img {
