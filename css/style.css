@@ -164,6 +164,8 @@ header {
     font-size: 16px;
     padding: 0px;
     margin: auto 0;
+    padding-left: 24px;
+    padding-right: 24px;
 
 }
 
@@ -412,7 +414,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    gap: 30px
+    gap: 30px;
+
 }
 
 .activite-cards a {
@@ -423,9 +426,9 @@ header {
 
 .activite-cards .card {
     width: auto;
-    height: auto;
     padding: 0px;
-
+    height: 439px;
+    max-height: 439px;
 }
 
 .activite-cards img {
@@ -443,8 +446,11 @@ header {
     align-items: stretch;
     margin-left: 19px;
     margin-right: 19px;
+      
 }
-
+.activite-cards .card-title{
+    margin-top: 5px;
+}
 /******** Section bas de page *******/
 .footer-section {
     display: flex;
@@ -548,7 +554,7 @@ header {
     .activite-cards .card {
         width: 100%;
         height: 270px;
-        max-height: 270px;
+        min-height: 270px;
 
     }
 
@@ -561,6 +567,7 @@ header {
         font-size: 16px;
         margin: 0px;
         padding: 20px 19px;
+        padding-right: 0;
         text-align: initial;
     }
 
@@ -822,7 +829,6 @@ header {
         padding: 0px 30px;
         padding-bottom: 65px;
         margin: 0px;
-
     }
 
     .activite .section-titre {
@@ -833,12 +839,13 @@ header {
         display: flex;
         flex-direction: column;
         gap: 15px;
-
     }
 
     .activite-cards .card {
         width: 100%;
-        max-height: 335px;
+        height: 100%;
+        max-height: 200px;
+        min-height:200px;
     }
 
     .activite-cards img {
