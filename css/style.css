@@ -438,19 +438,20 @@ header {
     border-radius: 1.25rem 1.25rem 0px 0px;
     object-fit: cover;
     border-image-width: auto;
+
 }
 
 .activite-cards .card-small {
     flex-grow: 1;
     margin-left: 19px;
-    margin-top: 10px;
+    margin-top: auto;
     margin-right: 19px;
 }
 
 .activite-cards .card-large {
     flex-grow: 2;
     margin-left: 19px;
-    margin-top: 10px;
+    margin-top: auto;
     margin-right: 19px;
 
 }
@@ -585,16 +586,15 @@ header {
     .activite-cards .card-small {
         flex-grow: 1;
         margin-left: 19px;
-        margin-top: 10px;
+        margin-top: auto;
         margin-right: 19px;
     }
     
     .activite-cards .card-large {
         flex-grow: 2;
         margin-left: 19px;
-        margin-top: 5px;
+        margin-top:auto;
         margin-right: 19px;
-    
     }
 }
 
