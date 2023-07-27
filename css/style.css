@@ -364,9 +364,7 @@ header {
 
 .populaires-cards .card {
     display: flex;
-
     height: 9rem;
-
 }
 
 .populaires-cards img {
@@ -408,10 +406,6 @@ header {
     margin: 35px 0 35px 0;
     padding: 30px;
     padding-top: 0px;
-}
-
-.activite .section-titre {
-    margin-bottom: 1.875rem;
 }
 
 .activite .activite-cards {
